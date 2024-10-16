@@ -68,8 +68,8 @@ const SignIn = () => {
       <div className="absolute right-4 top-4 font-medium text-lg text-black ">
         Don&apos;t have an Account?{" "}
         <Link
-          href="signup"
-          className="text-[#001A33] cursor-pointer hover:text-gray-600"
+          href="/signup"
+          className="text-[#001A33] cursor-pointer hover:text-blue-600"
         >
           Sign up
         </Link>
