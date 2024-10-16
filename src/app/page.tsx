@@ -12,6 +12,7 @@ import { useMutation } from "@tanstack/react-query";
 import { toast, ToastContainer } from "react-toastify";
 import { ErrorType, handleError } from "@/lib/handle-error";
 import { studentHandle } from "../../axios-config";
+import Link from "next/link";
 interface ISignIn {
   email: string;
   password: string;
@@ -64,17 +65,17 @@ const SignIn = () => {
   return (
     <section className="flex items-center w-full justify-center px-4 md:px-6 lg:px-14  h-screen relative">
       <ToastContainer />
-      <p className="absolute right-4 top-4 font-medium text-lg text-black ">
+      <div className="absolute right-4 top-4 font-medium text-lg text-black ">
         Don&apos;t have an Account?{" "}
-        <span
-          onClick={() => push("/signup")}
-          className="text-[#001A33] cursor-pointer"
+        <Link
+          href="signup"
+          className="text-[#001A33] cursor-pointer hover:text-gray-600"
         >
           Sign up
-        </span>
-      </p>
-      <div className=" h-full flex flex-col justify-center relative">
-        <section className="w-[33.875rem] flex flex-col gap-12">
+        </Link>
+      </div>
+      <section className=" h-full w-full items-center flex flex-col justify-center relative">
+        <section className="lg:w-[33.875rem] w-full flex flex-col lg:gap-12 gap-5">
           <div className="flex flex-col space-y-2">
             <h3 className="font-normal text-[2.625rem] text-black">
               Welcome Back
@@ -141,7 +142,7 @@ const SignIn = () => {
             </form>
           </div>
         </section>
-      </div>
+      </section>
     </section>
   );
 };
