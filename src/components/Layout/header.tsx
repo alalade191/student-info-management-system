@@ -5,8 +5,6 @@ import { Sling as Hamburger } from "hamburger-react";
 import { Button } from "@chakra-ui/react";
 import { convertDate, convertToAmPm, getTimeParams } from "../time";
 export const Header = () => {
-  const username = localStorage.getItem("user") as string;
-  const value = JSON.parse(username);
   const navbar = [
     {
       name: "Home",
@@ -52,11 +50,6 @@ export const Header = () => {
         {isOpen && (
           <div className="absolute top-full left-0 w-full bg-[#001A33] text-white px-4 py-4">
             {renderNavLinks()}
-            <div className="flex items-center gap-5">
-              <Button className="font-semibold cursor-pointer text-xl flex item-center text-center text-[#F6F6F6] bg-[#001A33] rounded-[10px] border border-white shadow-sm">
-                {value}
-              </Button>
-            </div>
           </div>
         )}
 
@@ -67,9 +60,6 @@ export const Header = () => {
 
         <div className="lg:block hidden">
           <div className="flex items-center gap-5">
-            <Button className="font-semibold cursor-pointer text-xl flex item-center text-center text-[#F6F6F6] bg-[#001A33] rounded-[10px] border border-white shadow-sm">
-              {value}
-            </Button>
             <div className="flex items-center">
               <p className="border-r border-greybg-500 pr-2 text-white">
                 {convertDate()}
