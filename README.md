@@ -28,7 +28,7 @@ LocalStorage for USER storage.
 Mock JSON-based database for CRUD operations.
 
 INSTALLATION
-Clone the Repository:git clone https://github.com/your-repo/student-info-management.git
+Clone the Repository:git clone https://github.com/alalade191/student-info-management-system.git
 Navigate to the Project Directory: cd miva
 Install Dependencies: npm install
 
@@ -37,4 +37,5 @@ Set up Environment Variables
 Create a .env.local file in the root of your project and add the following: JWT_SECRET=miva_secret_key
 
 Run the Development Server: npm run dev
+
 # student-info-management-system
