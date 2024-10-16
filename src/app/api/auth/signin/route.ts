@@ -3,7 +3,7 @@ import { getUserByEmail } from "../../../../../data/users";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
-const JWT_SECRET = process.env.JWT_SECRET as string;
+const JWT_SECRET = process.env.NEXT_PUBLIC_BASE_URL as string;
 if (!JWT_SECRET) {
   throw new Error("JWT_SECRET is not defined in the environment variables");
 }
