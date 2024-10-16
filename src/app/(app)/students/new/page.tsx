@@ -123,7 +123,7 @@ const CreateStudent = () => {
 
               <div className="w-full">
                 <Input
-                  placeholder="Enter your date of birth"
+                  placeholder="Enter your date of birth 20-02-2022"
                   className="rounded-2xl !h-14"
                   {...register("dob")}
                 />
