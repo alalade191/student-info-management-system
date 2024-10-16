@@ -2,7 +2,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { Sling as Hamburger } from "hamburger-react";
-import { Button } from "@chakra-ui/react";
 import { convertDate, convertToAmPm, getTimeParams } from "../time";
 export const Header = () => {
   const navbar = [

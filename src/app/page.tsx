@@ -43,7 +43,7 @@ const SignIn = () => {
   const { errors } = formState;
   const { mutate, isPending } = useMutation({
     mutationFn: async (user: ISignIn) => {
-      const response = await studentHandle.post("/api/auth/signin", user);
+      await studentHandle.post("/api/auth/signin", user);
     },
 
     onSuccess() {
