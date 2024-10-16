@@ -14,5 +14,13 @@
     "major": "Engineering",
     "dob": "23-02-32",
     "gpa": "2.40"
+  },
+  {
+    "id": "3",
+    "name": "Rancho Emmy",
+    "registrationNumber": "939388294",
+    "major": "Nutrition",
+    "dob": "23-12-32",
+    "gpa": "4.20"
   }
 ]

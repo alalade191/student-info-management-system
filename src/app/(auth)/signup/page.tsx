@@ -69,15 +69,7 @@ const SignUp = () => {
   return (
     <section className="flex items-center w-full justify-center px-4 md:px-6 lg:px-14  h-screen relative">
       <ToastContainer />
-      <div className="absolute right-4 top-4 font-medium text-lg text-black ">
-        Already have an Account?{" "}
-        <Link
-          href="/"
-          className="text-[#001A33] cursor-pointer hover:text-blue-600"
-        >
-          Log in
-        </Link>
-      </div>
+
       <section className=" h-full w-full items-center flex flex-col justify-center relative">
         <section className="lg:w-[33.875rem] w-full flex flex-col lg:gap-12 gap-5">
           <div className="flex flex-col space-y-2">
@@ -85,6 +77,15 @@ const SignUp = () => {
             <p className="font-normal text-base text-black">
               Fill out the first to get started with Funder
             </p>
+            <div className="font-medium text-lg text-black ">
+              Already have an Account?{" "}
+              <Link
+                href="/"
+                className="text-[#001A33] cursor-pointer hover:text-blue-600"
+              >
+                Log in
+              </Link>
+            </div>
           </div>
           <div>
             <form
